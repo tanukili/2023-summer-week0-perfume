@@ -1,0 +1,28 @@
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  color: var(--bs-secondary);
+  &.nav-link {
+    color: var(--bs-white);
+  }
+}
+.card {
+  border: none;
+  .list-group-item {
+    border: none;
+  }
+}
+//自製元件
+.logo {
+  background: url(../images/d’Perfume.png);
+  width: 128px;
+  height: auto;
+  display: block;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
