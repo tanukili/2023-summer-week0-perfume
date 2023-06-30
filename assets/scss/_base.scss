@@ -5,9 +5,8 @@ img {
 }
 a {
   text-decoration: none;
-  color: var(--bs-secondary);
   &.nav-link {
-    color: var(--bs-white);
+    color: var(--bs-secondary);
   }
 }
 .card {
