@@ -5,8 +5,11 @@ img {
 }
 a {
   text-decoration: none;
-  &.nav-link {
-    color: var(--bs-secondary);
+  .material-icons {
+    vertical-align: top;
+  }
+  &:hover {
+    color: var(--bs-primary-light) !important;
   }
 }
 .card {
