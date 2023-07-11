@@ -12,7 +12,6 @@
     .top-nav {
       padding-left: 14px;
       padding-right: 14px;
-  
       @media (max-width: 767px) {
         color: var(--bs-white) !important;
         background: var(--bs-gray-dark);
@@ -23,4 +22,14 @@
       }
     }
   }
+}
+//自製元件
+.logo {
+  background: url(../images/d’Perfume.png);
+  width: 128px;
+  height: auto;
+  display: block;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
 }
