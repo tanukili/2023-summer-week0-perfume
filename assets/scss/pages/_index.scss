@@ -4,4 +4,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding: 100px 0 135px;
+  @media (min-width: 767px) {
+    padding: 295px 0;
+    background-position: center;
+  }
 }

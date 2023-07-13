@@ -144,6 +144,9 @@ h4, .h4 {
 
 h5, .h5 {
   font-size: 1.25rem;
+  @media (min-width: 1200px) {
+      font-size: 1.5rem;
+  }
 }
 
 h6, .h6 {
@@ -660,7 +663,7 @@ progress {
   }
 }
 .row {
-  --bs-gutter-x: 1.5rem;
+  --bs-gutter-x: 1.875rem;
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;
