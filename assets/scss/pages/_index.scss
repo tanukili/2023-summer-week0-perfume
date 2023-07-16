@@ -9,3 +9,35 @@
     background-position: center;
   }
 }
+// modile 圖片設定
+.card-img-top {
+  @media (max-width: 768px) {
+    object-fit: cover; // 圖片填滿區塊
+    &.h-350 {
+      height: 350px;
+    }
+    &.h-520 {
+      height: 520px;
+    }
+    &.h-680 {
+      height: 680px;
+    }
+    &.position-20-20 {
+      object-position: 20% 20%; // 調整到適當位置
+    }
+    &.position-50-90 {
+      object-position: 50% 90%;
+    }
+  }
+}
+// sold-out 遮罩
+.sold-out {
+  &:before {
+    content: "Sold out";
+    position: absolute;
+    background: rgba(var(--bs-black-rgb), 0.3);
+    width: 100%;
+    padding: 157px 0;
+    text-align: center;
+  }
+}

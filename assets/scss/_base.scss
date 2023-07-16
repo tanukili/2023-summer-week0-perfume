@@ -1,29 +1,58 @@
+// 全站設定
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 a {
-  text-decoration: none;
   .material-icons {
     vertical-align: top;
-  }
-  &:hover {
-    color: var(--bs-primary-light) !important;
+    &:hover {
+      color: var(--bs-primary-light);
+    }
   }
 }
 .card {
-  border: none;
-  .list-group-item {
-    border: none;
+  .card-img-top {
+    margin-bottom: 0.5rem;
+  }
+  .card-body {
+    padding: 0;
+  }
+  .card-text {
+    font-weight: 300;
+    font-size: 1rem;
   }
 }
+// 新增通用樣式
 .fw-medium {
   font-weight: 500 !important;
 }
+
 .mb-6 {
+  margin-bottom: 1.25em;
+}
+.mb-7 {
   margin-bottom: 2.5rem;
 }
-.w-80 {
-  width: 80%;
+.py-7 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  @media (max-width: 767px) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.w-md-80 {
+  width: 100%;
+  @media (min-width: 768px) {
+    width: 80%;
+  }
+}
+
+.on-sale {
+  margin-left: 0.5rem;
+  color: var(--bs-secondary);
+  text-decoration: line-through;
 }
