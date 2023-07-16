@@ -54,6 +54,12 @@ a {
     width: 80%;
   }
 }
+.w-md-auto {
+  @media (min-width: 768px) {
+    width: auto !important;
+    position: static !important;
+  }
+}
 
 .on-sale {
   margin-left: 0.5rem;
