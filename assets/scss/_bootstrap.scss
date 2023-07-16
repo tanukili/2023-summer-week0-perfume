@@ -154,7 +154,7 @@ h6, .h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 abbr[title],
@@ -633,6 +633,10 @@ progress {
   width: 100%;
   padding-right: var(--bs-gutter-x, 0.75rem);
   padding-left: var(--bs-gutter-x, 0.75rem);
+  @media (max-width: 767px) {
+    padding-right: var(--bs-gutter-x, 0.9375rem);
+    padding-left: var(--bs-gutter-x, 0.9375rem);
+  }
   margin-right: auto;
   margin-left: auto;
 }
@@ -664,6 +668,9 @@ progress {
 }
 .row {
   --bs-gutter-x: 1.875rem;
+  @media (max-width: 767px) {
+    --bs-gutter-x: 0.9375rem;
+  }
   --bs-gutter-y: 0;
   display: flex;
   flex-wrap: wrap;

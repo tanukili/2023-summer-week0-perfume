@@ -30,11 +30,14 @@
 .logo {
   background: url(../images/d’Perfume.png);
   width: 128px;
-  height: auto;
+  height: 38px;
   display: block;
   text-indent: 101%;
   white-space: nowrap;
   overflow: hidden;
+  &.logo-light {
+    background: url(../images/d’Perfumewhite.png);
+  }
 }
 // subscribe-block
 .bg-subscribe {
@@ -43,4 +46,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding: 312px 0 112px;
+}
+
+.fs-14 {
+  font-size: 14px;
 }

@@ -25,15 +25,19 @@ a {
   }
 }
 // 新增通用樣式
-// .fw-medium {
-//   font-weight: 500 !important;
-// }
+.fw-medium {
+  font-weight: 500 !important;
+}
 
 .mb-6 {
   margin-bottom: 1.25rem;
 }
 .mb-7 {
   margin-bottom: 2.5rem;
+}
+.py-6 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 .py-7 {
   padding-top: 2.5rem;
