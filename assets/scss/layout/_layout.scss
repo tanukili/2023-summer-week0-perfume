@@ -13,12 +13,12 @@
       top: 56px;
     }
     .top-nav {
-      padding-left: 14px;
-      padding-right: 14px;
+      padding: 0 15px;
       @media (max-width: 767px) {
         color: var(--bs-white) !important;
         background: var(--bs-gray-dark);
         border-bottom: 1px solid var(--bs-white);
+        padding: 13px 0;
         &:hover {
           background: var(--bs-secondary);
         }

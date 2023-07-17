@@ -9,29 +9,50 @@
     background-position: center;
   }
 }
+.btn-show {
+  width: 100%;
+  font-size: 28px;
+  padding: 9px 0;
+  @media (min-width: 768px) {
+    width: 78.65%;
+  }
+}
 // modile 圖片設定
 .card-img-top {
-  @media (max-width: 768px) {
-    object-fit: cover; // 圖片填滿區塊
-    &.h-350 {
-      height: 350px;
+  object-fit: cover; // 圖片填滿區塊
+  &.h-350 {
+    height: 350px;
+    @media (min-width: 768px) {
+      height: 555px;
     }
-    &.h-520 {
-      height: 520px;
+    &.h-md-540 {
+      @media (min-width: 768px) {
+    height: 540px;
+      }
     }
-    &.h-680 {
-      height: 680px;
+  }
+  &.h-520 {
+    height: 520px;
+  }
+  &.h-680 {
+    height: 680px;
+    @media (min-width: 768px) {
+      height: 1080px;
     }
-    &.position-20-20 {
-      object-position: 20% 20%; // 調整到適當位置
-    }
-    &.position-50-90 {
-      object-position: 50% 90%;
-    }
+  }
+
+  &.position-20-20 {
+    object-position: 20% 20%; // 調整到適當位置
+  }
+  &.position-50-90 {
+    object-position: 50% 90%;
   }
 }
 // sold-out 遮罩
 .sold-out {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--bs-white);
   &:before {
     content: "Sold out";
     position: absolute;
@@ -39,5 +60,8 @@
     width: 100%;
     padding: 157px 0;
     text-align: center;
+    @media (min-width: 767px) {
+      padding: 252px 0;
+    }
   }
 }
