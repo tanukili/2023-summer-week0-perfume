@@ -2,7 +2,8 @@
   .navbar-collapse {
     // 下拉選單定位
     @media (max-width: 767px) {
-      top: 56px;
+      top: 54px;
+      z-index: 10;
     }
     // 自訂樣式
     .top-nav {
@@ -16,13 +17,14 @@
           background: var(--bs-secondary);
         }
       }
+      &:hover {
+        @media (min-width: 767px) {
+          color: var(--bs-primary-light) !important;
+        }
+      }
     }
     .bottom-nav {
-      color: var(--bs-white);
       padding: 0 18px;
-      &:hover {
-        color: var(--bs-gray-500) !important;
-      }
     }
   }
 }
@@ -47,7 +49,7 @@
   background-repeat: no-repeat;
   padding: 312px 0 112px;
   @media (min-width: 797px) {
-    background-position: 0 40%;
+    background-position: 0 45%;
   }
 }
 
