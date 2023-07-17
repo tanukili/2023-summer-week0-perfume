@@ -1,17 +1,10 @@
 .navbar {
-  .navbar-toggler {
-    border: none;
-    &:focus {
-      box-shadow: none;
-    }
-    &:hover {
-      box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
-    }
-  }
   .navbar-collapse {
+    // 下拉選單定位
     @media (max-width: 767px) {
       top: 56px;
     }
+    // 自訂樣式
     .top-nav {
       padding: 0 15px;
       @media (max-width: 767px) {
@@ -22,6 +15,13 @@
         &:hover {
           background: var(--bs-secondary);
         }
+      }
+    }
+    .bottom-nav {
+      color: var(--bs-white);
+      padding: 0 18px;
+      &:hover {
+        color: var(--bs-gray-500) !important;
       }
     }
   }
