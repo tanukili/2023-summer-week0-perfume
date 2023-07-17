@@ -38,6 +38,11 @@ a {
     margin-bottom: 3.25rem;
   }
 }
+.mb-md-6 {
+  @media (min-width: 767px) {
+    margin-bottom: 1.25rem;
+  }
+}
 .mb-7 {
   margin-bottom: 2.5rem;
   @media (min-width: 767px) {

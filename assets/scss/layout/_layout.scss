@@ -46,6 +46,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding: 312px 0 112px;
+  @media (min-width: 797px) {
+    background-position: 0 40%;
+  }
 }
 
 .fs-14 {
