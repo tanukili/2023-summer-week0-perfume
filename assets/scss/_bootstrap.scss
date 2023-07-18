@@ -4509,6 +4509,7 @@ textarea.form-control-lg {
 .card-subtitle {
   margin-top: -0.25rem;
   margin-bottom: 0;
+  font-weight: 300;
 }
 
 .card-text:last-child {
@@ -4759,10 +4760,10 @@ textarea.form-control-lg {
 .page-link {
   position: relative;
   display: block;
-  color: #0d6efd;
+  color: var(--bs-body-color);
+  font-size: 1.25rem;
   text-decoration: none;
   background-color: #fff;
-  border: 1px solid #dee2e6;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -4772,16 +4773,15 @@ textarea.form-control-lg {
 }
 .page-link:hover {
   z-index: 2;
-  color: #0a58ca;
-  background-color: #e9ecef;
-  border-color: #dee2e6;
+  color: var(--bs-primary-light);
+  text-decoration: underline;
 }
 .page-link:focus {
   z-index: 3;
-  color: #0a58ca;
-  background-color: #e9ecef;
+  color:  var(--bs-primary-light);
+  background-color: var(--bs-body-bg);
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  text-decoration: underline;
 }
 
 .page-item:not(:first-child) .page-link {
@@ -4789,9 +4789,9 @@ textarea.form-control-lg {
 }
 .page-item.active .page-link {
   z-index: 3;
-  color: #fff;
-  background-color: #0d6efd;
-  border-color: #0d6efd;
+  color:  var(--bs-primary-light);
+  background-color: var(--bs-body-bg);
+  text-decoration: underline;
 }
 .page-item.disabled .page-link {
   color: #6c757d;
@@ -4801,7 +4801,7 @@ textarea.form-control-lg {
 }
 
 .page-link {
-  padding: 0.375rem 0.75rem;
+  padding: 0rem 0.625rem;
 }
 
 .page-item:first-child .page-link {

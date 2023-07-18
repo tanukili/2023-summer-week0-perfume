@@ -7,6 +7,9 @@ img {
 a {
   .material-icons {
     vertical-align: middle;
+    &:hover {
+      color: var(--bs-primary-light);
+    }
   }
 }
 .card {
@@ -45,12 +48,19 @@ a {
     margin-left: 1.25rem;
   }
 }
+.mt-7 {
+  margin-top: 2.5rem;
+}
 .mb-7 {
   margin-bottom: 2.5rem;
   @media (min-width: 767px) {
     margin-bottom: 3.75rem;
   }
 }
+.mb-8 {
+  margin-bottom: 0.125rem !important;
+}
+
 .py-6 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -62,6 +72,11 @@ a {
     padding-top: 2rem;
     padding-bottom: 2rem;
   }
+}
+
+.g-7,
+.gy-7 {
+  --bs-gutter-y: 1.75rem;
 }
 
 .w-md-auto {

@@ -1,0 +1,21 @@
+.products-list {
+  // 圖片高度
+  .card-img-top {
+    &.h-165 {
+      height: 165px;
+    }
+    &.position-bottom {
+      object-position: bottom;
+    }
+    &.position-left {
+      object-position: left;
+    }
+    &.position-50-30 {
+      object-position: 50% 30%;
+    }
+  }
+  .material-icons {
+    color: var(--bs-primary);
+  }
+  margin-bottom: 2.75rem;
+}
